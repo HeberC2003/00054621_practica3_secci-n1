@@ -1,24 +1,23 @@
-:root {
-    --blue: #1e90ff;
-    --white: #ffffff;
-    --pink: #E12AFB;
-}
-
-.box{
-    display: flex;
+.my-element{
+    height: 100px;
     background-color: var(--pink);
-    flex-direction: row;
-    flex-wrap: wrap;
+    color: var(--white);
 }
 
-.box div{
-    flex-grow: 4;
-    margin: 10px 5px;
-    border-radius: 8px;
-    padding: 5px;
+.my-element-animate{
+    width: 30%;
+    height: 50px;
     background-color: var(--blue);
+    animation: slideIn 3s ease-in-out;
 }
 
-.box div:first-child{
-    flex-grow: 12;
+@keyframes slideIn{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

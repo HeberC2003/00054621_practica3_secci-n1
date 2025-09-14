@@ -17,8 +17,10 @@
     border-radius: 8px;
     padding: 5px;
     background-color: var(--blue);
+    width: 33%;
 }
 
+/*agregamos*/
 .box div:first-child{
-    flex-grow: 12;
+    width: 64%;
 }
